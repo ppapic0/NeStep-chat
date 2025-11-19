@@ -213,10 +213,16 @@ export default function App() {
                 onKeyDown={e => { if (e.key === 'Enter') onSend() }}
                 placeholder="메시지를 입력하세요 (예: 최신 자립지원제도 알려줘)"
                 style={{
-                  flex: 1, height: 44, padding: '0 14px',
-                  borderRadius: 12, border: `1px solid ${theme.border}`,
-                  background: '#fffdf7', outline: 'none',
-                  boxShadow: 'inset 0 1px 0 rgba(0,0,0,.02)'
+                  flex: 1, 
+                  height: 44, 
+                  padding: '0 14px',
+                  borderRadius: 12, 
+                  border: `1px solid ${theme.border}`,
+                  background: '#fffdf7', 
+                  outline: 'none',
+                  boxShadow: 'inset 0 1px 0 rgba(0,0,0,.02)',
+                  color: '#000',
+                  caretColor: '#000',
                 }}
               />
               <button
