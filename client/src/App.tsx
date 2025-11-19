@@ -1,3 +1,5 @@
+const API_BASE =
+  import.meta.env.VITE_API_BASE_URL ?? "http://localhost:5000";
 import { useEffect, useRef, useState } from 'react'
 import { Send, Bot, User, Search } from 'lucide-react'
 
@@ -56,7 +58,7 @@ export default function App() {
     setMsgs(prev => [...prev, { id: typingId, who: 'bot', text: useWeb ? '웹 검색으로 보완 중…' : '답변 작성 중…' }])
 
     try {
-      const res = await fetch('/api/chat', {
+      const res = await fetch(`${API_BASE}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: question, useWeb })
