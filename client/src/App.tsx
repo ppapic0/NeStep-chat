@@ -130,7 +130,7 @@ export default function App() {
             display: 'grid', placeItems: 'center', background: '#e9f7ec',
             boxShadow: '0 2px 8px rgba(0,0,0,.06)'
           }}>🌱</div>
-          <h1 style={{ fontSize: 22, fontWeight: 800, margin: 0, color: theme.accentBrown }}>
+          <h1 style={{ fontSize: 20, fontWeight: 800, margin: 0, color: theme.accentBrown }}>
             NeStep 챗봇
           </h1>
           <span style={{
@@ -138,7 +138,7 @@ export default function App() {
             background: '#fff7cc', border: `1px solid ${theme.border}`,
             padding: '4px 10px', borderRadius: 999
           }}>
-            둥지처럼 따뜻한 자립 정보 도우미
+            둥지처럼 따뜻한 자립 도우미
           </span>
         </div>
       </header>
